@@ -79,13 +79,13 @@ const SideBar = ({
           </header>
           <div className="flex flex-grow h-full overflow-hidden">
             <aside
-              className={`flex flex-col justify-between py-2 border-r transition-all duration-500 ${
+              className={` flex flex-col justify-between py-2 border-r transition-all ease-linear duration-500 ${
                 isActive
                   ? "min-w-[0px] max-w-[100px]"
                   : "min-w-[150px] max-w-[500px]"
               }`}
             >
-              <nav className="grid items-start font-medium gap-2 lg:px-4">
+              <nav className="grid items-start font-medium gap-2 px-4">
                 <p className="text-muted-foreground text-sm">Main</p>
                 <Link
                   href="/"
@@ -97,18 +97,18 @@ const SideBar = ({
                   <p className={`${isActive ? "hidden" : ""}`}>Home</p>
                 </Link>
                 <Link
-                  href="/page1"
+                  href="/analytics"
                   className={`${
-                    pathname === "/page1" ? isActiveLinkClass : ""
+                    pathname === "/analytics" ? isActiveLinkClass : ""
                   } ${navLinkClass}`}
                 >
                   <LineChart className="size-6" />
                   <p className={`${isActive ? "hidden" : ""}`}>Analytics</p>
                 </Link>
                 <Link
-                  href="/page2"
+                  href="/transactions"
                   className={`${
-                    pathname === "/page2" ? isActiveLinkClass : ""
+                    pathname === "/transactions" ? isActiveLinkClass : ""
                   } ${navLinkClass}`}
                 >
                   <ArrowLeftRight className="size-6" />
@@ -117,9 +117,9 @@ const SideBar = ({
 
                 <p className="text-muted-foreground text-sm mt-4">More</p>
                 <Link
-                  href="#"
+                  href="/tutorial"
                   className={`${
-                    pathname === "/help" ? isActiveLinkClass : ""
+                    pathname === "/tutorial" ? isActiveLinkClass : ""
                   } ${navLinkClass}`}
                 >
                   <VideoIcon className="size-6" />
