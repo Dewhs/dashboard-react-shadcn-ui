@@ -111,7 +111,7 @@ const SideBar = ({
             </div>
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="md:hidden">
                   <Menu className="size-6" />
                 </Button>
               </SheetTrigger>
