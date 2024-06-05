@@ -73,7 +73,7 @@ import {
 } from "@/components/ui/sheet";
 
 const navLinkClass =
-  "flex items-center gap-3 px-3 py-2 rounded-lg font-medium text-muted-foreground transition-all hover:text-primary focus:bg-muted focus:text-primary";
+  "flex items-center gap-3 px-3 py-2 rounded-lg  transition-all hover:text-primary";
 
 const isActiveLinkClass = "bg-muted text-primary";
 
@@ -201,11 +201,12 @@ const AsideContent = ({ isActive }: { isActive: boolean }) => {
   );
 };
 
+
 const AsideNav = ({ isActive }: { isActive: boolean }) => {
   const pathname = usePathname();
   return (
-    <nav className="grid items-start font-medium gap-2 px-4">
-      <p className="text-muted-foreground text-sm">Main</p>
+    <nav className="grid items-start font-medium gap-2 px-4 text-muted-foreground ">
+      <p className="text-sm">Main</p>
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
@@ -245,7 +246,7 @@ const AsideNav = ({ isActive }: { isActive: boolean }) => {
                 pathname === "/transactions" ? isActiveLinkClass : ""
               } ${navLinkClass}`}
             >
-              <ArrowLeftRight className="size-6" />
+              <ArrowLeftRight className="size-5" />
               <p className={`${isActive ? "hidden" : ""}`}>Transactions</p>
             </Link>
           </TooltipTrigger>
