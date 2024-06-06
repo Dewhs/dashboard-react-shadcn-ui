@@ -139,7 +139,7 @@ const SideBar = ({
               <AsideContent isActive={isActive} />
             </aside>
             {/* MAIN */}
-            <div className="overflow-scroll flex-grow">{children}</div>
+            <div className="overflow-scroll flex-grow p-8">{children}</div>
           </div>
         </div>
       </ThemeProvider>
