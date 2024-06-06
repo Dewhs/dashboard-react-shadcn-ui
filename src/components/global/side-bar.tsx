@@ -130,10 +130,10 @@ const SideBar = ({
           </header>
           <div className="flex flex-grow h-full overflow-hidden">
             <aside
-              className={`max-md:hidden flex flex-col justify-between py-2 border-r transition-all ease-linear duration-500 ${
+              className={`max-md:hidden flex flex-col justify-between py-2 border-r transition-all ease-out duration-500 ${
                 isActive
                   ? "min-w-[0px] max-w-[100px]"
-                  : "min-w-[150px] max-w-[500px]"
+                  : "min-w-[250px] max-w-[500px]"
               }`}
             >
               <AsideContent isActive={isActive} />
