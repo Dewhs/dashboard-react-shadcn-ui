@@ -246,7 +246,7 @@ const AsideNav = ({ isActive }: { isActive: boolean }) => {
                 pathname === "/transactions" ? isActiveLinkClass : ""
               } ${navLinkClass}`}
             >
-              <ArrowLeftRight className="size-5" />
+              <ArrowLeftRight className="size-6" />
               <p className={`${isActive ? "hidden" : ""}`}>Transactions</p>
             </Link>
           </TooltipTrigger>
